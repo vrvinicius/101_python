@@ -19,3 +19,6 @@ print("10 % 4 = ", 10 % 4)
 
 # potenciação
 print("2 ** 3 = ", 2 ** 3)
+
+# raiz quadrada
+print("Raiz quadrada de 16 = ", 16 ** (1/2)) # numero ** 0.5
