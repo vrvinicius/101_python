@@ -66,3 +66,39 @@ while True: #while infinito
     saldo_total += float(saldo)
 
 print("Saldo total:", saldo_total)
+
+
+# FOR (percorre os elementos de um objeto)
+# %%
+nome = "Vinícius Vieira"
+
+for letra in nome:
+    print(letra)
+
+
+# %%
+# tabuada usando for
+
+numero = 2
+max_numero = 100
+
+for i in range(1, max_numero + 1):
+    print(numero, "x", i, "=", numero * i)
+
+# %%
+# divisiveis por 4
+
+for i in range(4, 101):
+    if i % 4 == 0:
+        print(i)
+# %%
+# soma das alturas
+soma = 0
+qtde_entradas = 4
+
+for i in range(qtde_entradas):
+    altura = input("Insira uma altura: ")
+    altura = float(altura)
+    soma += altura
+
+print("Soma das alturas:", soma)
