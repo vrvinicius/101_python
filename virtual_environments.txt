@@ -1,0 +1,9 @@
+Comando para criar um novo ambiente utilizando conda: conda create --name venv_name
+
+Comando para ativar o ambiente: conda activate venv_name
+
+Comando para voltar para o ambiente base: conda deactivate
+
+Comando para listar todos os ambientes: conda info --envs
+
+Comando para excluir um ambiente: conda remove --all --name venv_name
