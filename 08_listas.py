@@ -148,3 +148,72 @@ print("MEDIA:", media)
 print("MINIMO:", minimo)
 print("MAXIMO:", maximo)
 print("QTDE:", qtde)
+
+#  %%
+
+# LIST COMPREHENSION
+
+x = []
+
+for i in range(1,101):
+    x.append(i)
+
+x
+# %%
+y = [i for i in range(1,101)]
+y
+
+# %%
+def par(x):
+    return x % 2 == 0
+
+z = [par(i) for i in range(1, 101)]
+z
+
+# %%
+w = [i for i in range(1, 101) if par(i)]
+w
+
+# %%
+# UNPACK: descomprimir um iterável
+
+a = 1
+b = 5
+
+print(a)
+print(b)
+
+# %%
+# quero inverter os valores de a e b
+
+a, b = b, a # cria uma tupla e atribui os novos valores. O unpack possibilita isolar os valores do iterável
+print(a)
+print(b)
+
+# %%
+
+a, b, *_ = 1, 2, 3, 4, 5, 6 # usa o * como um caractere chave para não atribuir nomes a todos os elementos do iterável
+print(a, b, _)
+
+*_, a, b = 1, 2, 3, 4, 5, 6
+print(a, b)
+
+a, *_, b = 1, 2, 3, 4, 5, 6
+print(a, b)
+
+# %%
+def soma(a, *args): # *args possibilita inserir n valores
+    total = a + sum(args)
+    return total
+
+soma(1, 2, 3, 6, 8)
+
+# %%
+def soma_quatro(a, b, c, d):
+    return a + b + c + d
+
+values = [1, 2, 3, 4]
+soma_quatro(*values)
+
+# %%
+soma(*values)
