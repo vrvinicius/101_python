@@ -18,9 +18,6 @@ chaves = lines[0].strip("\n").split(";") # strip para remover o \n. split para s
 for c in chaves:
     dados[c] = [] # criando uma lista para cada chave do dicionário. a chave é o cabeçalho do arquivo csv
 
-
-# %%
-
 for l in lines[1:]: # primeira linha (cabeçalho) é a chave. pegando valores a partir da linha 1
     
     valores = l.strip("\n").split(";") # criando lista com os valores
