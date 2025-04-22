@@ -36,7 +36,7 @@ def valid_status(numero_sorteio, jogada):
 
 numero_sorteio = random.randint(1, 15)
 
-for i in range(3):
+for i in range(3): # três tentatvas
 
     jogada = valid_jogada()
     if valid_status(numero_sorteio=numero_sorteio, jogada=jogada):
